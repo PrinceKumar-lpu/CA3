@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Appointment Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.shutterstock.com/image-vector/medical-snake-caduceus-logo-sign-600nw-1511110730.jpg" alt="Medical Appointment Scheduler" class="logo" width="100" height="100">
+        <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL21lZGFudGEtdGhlLW1lZGljaXR5LmpwZw.webp" alt="Doctor" class="doctor" width="300" height="100" style="padding-left: 150px;">
+
+        <h1>Welcome to Medical Appointment Scheduler</h1>
+
+        <div id="appointment-section">
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="patient-name">Patient Name</label>
+                    <input type="text" id="patient-name" placeholder="Enter patient name" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-date">Appointment Date</label>
+                    <input type="date" id="appointment-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-time">Appointment Time</label>
+                    <input type="time" id="appointment-time" required>
+                </div>
+                <div class="form-group" id="doctor-group">
+                    <label for="doctor-name">Doctor</label>
+                    <select id="doctor-name" required>
+                        <option value="" disabled selected>Select doctor</option>
+                        <option value="Dr. Saleja Gupta">Dr. Saleja Gupta</option>
+                        <option value="Dr. Niharika Sharma">Dr. Niharika Sharma</option>
+                        <option value="Dr. Kajal Gupta">Dr. Kajal Gupta</option>
+                        <option value="Dr. Rajan Kakkar">Dr. Rajan Kakkar</option>
+                        <option value="Dr. Raman Yadav">Dr. Raman Yadav </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="disease-select">Common Disease</label>
+                    <select id="disease-select">
+                        <option value="" disabled selected>Select a disease</option>
+                        <option value="Flu">Flu</option>
+                        <option value="Cold">Cold</option>
+                        <option value="Headache">Headache</option>
+                        <option value="Allergy">Allergy</option>
+                        <option value="Back Pain">Back Pain</option>
+                        <option value="Stomach Ache">Stomach Ache</option>
+                    </select>
+                </div>
+                <button type="submit">Schedule Appointment</button>
+            </form>
+            <h2>Scheduled Appointments</h2>
+            <div id="appointments-list"></div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
